@@ -1,8 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
 
 
@@ -12,35 +14,64 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
 }
 
 .divText {
     display: flex;
     height: 20vh;
-    font-size: 30px;
+    font-size: 2.5rem;
     font-style: oblique;
     align-items: center;
     letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #2193b0;
 }
 
 .divNumber {
     display: flex;
     align-items: center;
     height: 20vh;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 12px #2193b0;
+    margin-bottom: 1.5rem;
 }
 
 .divButtons {
     display: flex;
     height: 10vh;
     align-items: center;
-    
-    
-
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 .buttonDecrease,.buttonReset,.buttonIncrease {
     margin: 0 1vw 0 1vw;
-    padding: 8px;
-    
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(33,147,176,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.buttonDecrease:hover {
+    background: linear-gradient(135deg, #ff5858 0%, #f09819 100%);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(255,88,88,0.2);
+}
+.buttonReset:hover {
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(67,206,162,0.2);
+}
+.buttonIncrease:hover {
+    background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(247,151,30,0.2);
 }
